@@ -468,11 +468,83 @@ textarea {
   padding: 0 40px 0 0;
 }
 
+.map_wrap {
+  padding: 250px 0;
+  background: url(../img/wave2.png) repeat;
+}
+
+.map_wrap section {
+  width: 610px;
+  height: 310px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.map_wrap h5 {
+  font-size: 35px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+
+.map_wrap ul {
+  float: left;
+  width: 190px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.map_wrap article {
+  position: relative;
+  overflow: hidden;
+  padding: 35px 0;
+  background: url(../img/place.png) no-repeat right 15px;
+}
+
+.space {
+  height: 80px;
+  background: #f9f9f9;
+}
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer {
   position: relative;
   overflow: hidden;
+  padding: 69px 0 45px 0;
+  background: #45a5a2 url(../img/wave4.png) repeat-x top center;
+  color: #fff;
+}
+
+.footer ul {
+  padding-bottom: 15px;
+}
+
+.footer ul li {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer nav a {
+  padding: 0 10px 0 0;
+}
+
+.footer .float_right a {
+  display: block;
+  padding-bottom: 13px;
 }
 
 /*----------end footer----------*/
