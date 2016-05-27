@@ -1,0 +1,198 @@
+// Normally mainpage styles
+ 
+ /*----------header----------*/
+
+ .header{
+	@include povh('');
+	padding: 25px 0;
+	.button{
+		float: right;
+		color: #45a5a2;
+		font-size: 18px;
+		width: 200px;
+		background:#c7e4e3;
+		border: 1px solid #45a5a2;
+		&:hover{
+			color: #fff;
+			background:#45a5a2;
+		}
+	}
+ }
+ 	.logo{
+ 		float: left;
+ 		padding-top: 8px ;
+ 	}
+ 	.menu{
+ 		float: left;
+ 		padding:  5px 0 0 65px;
+ 		li{
+ 			padding: 0 35px 0 0;
+ 			display: inline-block;
+ 			a{
+ 				font-size: 18px;
+ 				color: #45a5a2;
+ 				text-decoration: none;
+ 				font-weight: 600;
+ 				&:hover{
+ 					text-decoration: underline;
+ 				}
+ 			}
+ 		}
+ 	}
+	
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+ }
+
+	.top_block{
+		height: 722px;
+		.float_left{
+			padding: 175px 0 0 0;
+		}
+		h6{
+			padding: 50px 0 0 0;
+			font-size: 42px;
+			color: #000000;
+			line-height: 1.1;
+		}
+		.float_right{
+			padding: 270px 0 0 0;
+		}
+		.button{
+			width: 310px;
+			height: 80px;
+			box-sizing: border-box;
+			padding: 0;
+			line-height: 80px;
+			font-size: 27px;
+			background:#45a5a2;
+			&:hover{
+				background:#1d6d6a;
+			}
+			img{
+				padding:  0 0 0 12px;
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+
+	.advantages_wrap{
+		padding: 220px 0 120px 0;
+		background:#f9f9f9 url(../img/wave1.png) top center repeat-x;
+	}
+		.advantages_block{
+			@include povh('');
+			section{
+				float: right;
+				width: 50%;
+				padding: 78px 0 0 0;
+				font-size: 20px;
+				font-style: italic;
+				h3{
+					padding-bottom: 30px;
+					font-size: 35px;
+					font-style: normal;
+				}
+				p{
+					padding-bottom: 30px;
+				}
+			}
+		}
+			.advantages_img{
+				width: 50%;
+				float: left;
+				text-align: center;
+			}
+
+	.why_we_wrap{
+		background:url(../img/wave2.png) repeat ;
+		padding: 200px 0;
+		.container{
+			overflow: visible;
+		}
+	}
+		.why_we_text{
+			width: 645px;
+			margin-top: 90px;
+			article{
+				width: 630px;
+				height: 340px;
+				background:#fff;
+				box-sizing: border-box;
+				padding: 20px;
+				line-height: 24px;
+				margin-bottom: 20px;
+				position: relative;
+				z-index: 2;
+				box-shadow: 10px 10px 0 rgba(0,0,0, 0.1);
+				h2{
+					font-size: 35px;
+					padding-bottom: 25px;
+					padding-top: 15px;
+				}
+				p{
+					font-size: 20px;
+				}
+				&:before{
+					content: url(../img/bubbles.png) ;
+					position: absolute;
+					top: -125px;
+					left: 20px;
+				}
+			}
+		}
+		.why_we_img{
+			position: absolute;
+			right: -108px;
+			top: -90px;
+			&:before{
+				content: url(../img/wave3.png);
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&:after{
+				content: url(../img/bubbles2.png);
+				position: absolute;
+				top: -100px;
+				right: 170px;
+			}
+		}
+
+	.dry_wrap{
+		background:#f9f9f9;
+		padding: 190px 0 125px 0;
+		section{
+			padding: 170px 0 0 0;
+			h2{
+				padding-bottom: 30px;
+				font-size: 35px;
+				font-style: normal;
+			}
+			p{
+				padding-bottom: 30px;
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+	}
+		.dry_img{
+			float: left;
+			padding: 0 40px 0 0;
+		}
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/
