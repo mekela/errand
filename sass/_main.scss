@@ -85,6 +85,32 @@
 	.advantages_wrap{
 		padding: 220px 0 120px 0;
 		background:#f9f9f9 url(../img/wave1.png) top center repeat-x;
+		
+		.bx-pager{
+			position: absolute;
+			left: 0;
+			top: 40%;
+			a{
+				display: block;
+				@include hidetext;
+				width: 7px;
+				height: 7px;
+				margin: 0 auto;
+				background:#26a69a;
+				border-radius: 50%;
+				margin-bottom: 7px;
+				border: 1px solid transparent;
+				&.active{
+					height: 10px;
+					width: 10px;
+					background:#fff;
+					border-color: #26a69a;
+				}
+			}
+		}
+		.bx-controls-direction{
+			display: none;
+		}
 	}
 		.advantages_block{
 			@include povh('');

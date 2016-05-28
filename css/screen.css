@@ -349,6 +349,37 @@ textarea {
   background: #f9f9f9 url(../img/wave1.png) top center repeat-x;
 }
 
+.advantages_wrap .bx-pager {
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
+.advantages_wrap .bx-pager a {
+  display: block;
+  font: 0 / 0 a;
+  text-shadow: none;
+  color: transparent;
+  width: 7px;
+  height: 7px;
+  margin: 0 auto;
+  background: #26a69a;
+  border-radius: 50%;
+  margin-bottom: 7px;
+  border: 1px solid transparent;
+}
+
+.advantages_wrap .bx-pager a.active {
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-color: #26a69a;
+}
+
+.advantages_wrap .bx-controls-direction {
+  display: none;
+}
+
 .advantages_block {
   position: relative;
   overflow: hidden;
@@ -548,3 +579,28 @@ textarea {
 }
 
 /*----------end footer----------*/
+@media only screen and (max-width: 1140px) {
+  .container {
+    width: 900px;
+  }
+  .why_we_img {
+    width: 650px;
+    overflow: hidden;
+    top: -27px;
+  }
+  .why_we_img img {
+    width: 100%;
+  }
+  .dry_wrap section {
+    padding-top: 96px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 680px;
+  }
+  .header .button {
+    width: 140px;
+  }
+}

@@ -9,10 +9,8 @@ $(document).ready(function() {
 	});
 	
 	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$('.advantages_wrap ul').bxSlider({
+	 adaptiveHeight: true,
+	 mode: 'vertical'
 	});
 });

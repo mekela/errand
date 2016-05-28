@@ -3,6 +3,29 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1140px) {
+  .container{
+  	width:900px;
+  }
+  .why_we_img{
+  	width: 650px;
+  	overflow: hidden;
+  	top: -27px;
+  	img{
+  		width: 100%;
+  	}
+  }
+  .dry_wrap section{
+  	padding-top: 96px;
+  }
+}
+
+
+@include mq($max-width: 900px) {
+	.container{
+  		width:680px;
+  	}
+  		.header .button{
+  			width: 140px;
+  		}
 }
