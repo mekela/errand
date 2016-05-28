@@ -13,4 +13,12 @@ $(document).ready(function() {
 	 adaptiveHeight: true,
 	 mode: 'vertical'
 	});
+
+	//menu
+	$( ".menu_trigger" ).click(function() {
+	  $( this ).next().slideToggle("slow");
+	});
+
+
+
 });

@@ -39,6 +39,9 @@
  			}
  		}
  	}
+ 		.menu_trigger{
+ 			display: none;
+ 		}
 	
 /*----------end-header----------*/	
 
@@ -135,7 +138,9 @@
 				float: left;
 				text-align: center;
 			}
-
+				.advantages_mobile{
+					display: none;
+				}
 	.why_we_wrap{
 		background:url(../img/wave2.png) repeat ;
 		padding: 200px 0;
@@ -164,6 +169,7 @@
 				}
 				p{
 					font-size: 20px;
+					font-style: italic;
 				}
 				&:before{
 					content: url(../img/bubbles.png) ;
@@ -190,7 +196,7 @@
 				right: 170px;
 			}
 		}
-
+	
 	.dry_wrap{
 		background:#f9f9f9;
 		padding: 190px 0 125px 0;
