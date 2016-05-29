@@ -263,6 +263,8 @@ textarea {
   color: #45a5a2;
   font-size: 18px;
   width: 200px;
+  padding-left: 0;
+  padding-right: 0;
   background: #c7e4e3;
   border: 1px solid #45a5a2;
 }
@@ -657,16 +659,32 @@ textarea {
     display: block;
   }
   .advantages_mobile section {
-    margin: 0 0 20px 0;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 14px 0;
   }
   .advantages_mobile section:before {
     width: 200px;
-    height: 2px;
+    height: 1px;
     display: block;
     content: '';
     background: #26a69a;
     margin: 0 auto;
-    margin-bottom: 19px;
+    margin-bottom: 14px;
+  }
+  .advantages_mobile section h3 {
+    padding-bottom: 8px;
+    font-style: normal;
+    font-size: 25px;
+  }
+  .dry_wrap section p {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .dry_wrap section h2 {
+    padding-bottom: 10px;
   }
   .why_we_text article {
     width: 385px;
@@ -763,6 +781,45 @@ textarea {
   .menu_trigger {
     display: block;
     padding: 4px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    width: 20px;
+    height: 13px;
+    transition: all 0.8s ease;
+  }
+  .menu_trigger span {
+    position: absolute;
+    height: 3px;
+    background: #00a7a3;
+    width: 20px;
+    border-radius: 1px;
+    transition: all 0.8s ease;
+    display: block;
+    margin: 5px 0;
+  }
+  .menu_trigger span:before, .menu_trigger span:after {
+    position: absolute;
+    height: 3px;
+    transition: all 0.8s ease;
+    background: #00a7a3;
+    width: 20px;
+    border-radius: 1px;
+    display: block;
+    content: '';
+    top: -5px;
+  }
+  .menu_trigger span:after {
+    top: 5px;
+  }
+  .menu_trigger.active span {
+    background: #fff;
+  }
+  .menu_trigger.active span:before, .menu_trigger.active span:after {
+    transform: rotate(45deg);
+    top: -2px;
+  }
+  .menu_trigger.active span:after {
+    transform: rotate(-45deg);
   }
   .header {
     overflow: visible;
@@ -788,6 +845,20 @@ textarea {
   }
   .top_block {
     height: 345px;
+  }
+  .top_block .float_right .button {
+    width: 270px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .top_block .float_right .button img {
+    width: 50px;
+    height: 25px;
+    padding-left: 5px;
+    position: relative;
+    top: 5px;
   }
   .advantages_wrap .advantages_img {
     text-align: center;
@@ -854,17 +925,24 @@ textarea {
   .map_wrap section {
     height: auto;
     width: auto;
-    padding: 10px;
+    padding: 15px;
+    margin-right: 10px;
   }
   .map_wrap section ul {
     width: 50%;
     padding-left: 10px;
     box-sizing: border-box;
   }
+  .map_wrap section h5 {
+    font-size: 25px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+  }
   .map_wrap article {
     background: url(../img/place.png) no-repeat bottom center;
     background-size: 76px 87px;
     margin-bottom: 20px;
     padding-bottom: 100px;
+    padding-top: 0;
   }
 }

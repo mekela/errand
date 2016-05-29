@@ -17,6 +17,7 @@ $(document).ready(function() {
 	//menu
 	$( ".menu_trigger" ).click(function() {
 	  $( this ).next().slideToggle("slow");
+	  $( this ).toggleClass("active");
 	});
 
 
